@@ -10,7 +10,10 @@ ReservoirComputing.jl provides an efficient, modular and easy to use implementat
     * Maass W, Natschläger T, Markram H: Real-time computing without stable states: a new framework for neural computation based on perturbations.
     * Lukoševičius, Mantas: A practical guide to applying echo state networks." Neural networks: Tricks of the trade.
     * Lukoševičius, Mantas, and Herbert Jaeger: Reservoir computing approaches to recurrent neural network training.
-    
+
+!!! info "Performance tip"
+    For faster computations on the CPU it is suggested to add `using MKL` to the script. For sake of clarity this library will not be indicated under every example in the documentation. 
+
 ## Installation
 ReservoirComputing.jl is registered in the General Julia Registry, so the installation of the package follows the usual procedure:
 ```julia
@@ -23,7 +26,7 @@ The support for this library is for Julia v1.6 or greater.
 This library provides multiple ways of training the chosen RC model. More specifically the available algorithms are:
 - ```StandardRidge```: a naive implementation of Ridge Regression. The default choice for training.
 - ```LinearModel```: a wrap around [MLJLinearModels](https://juliaai.github.io/MLJLinearModels.jl/stable/).
-- ```GaussianProcess```: a wrap around [GaussianProcesses](http://stor-i.github.io/GaussianProcesses.jl/latest/).
+- ```GaussianProcess```: a wrap around [GaussianProcesses](http://stor-i.github.io/GaussianProcesses.jl/latest/). Currently not available in version 0.9.0. Alternatives are being explored
 - ```LIBSVM.AbstractSVR```: a direct call of [LIBSVM](https://github.com/JuliaML/LIBSVM.jl) regression methods.
 
 Also provided are two different ways of doing predictions using RC:
