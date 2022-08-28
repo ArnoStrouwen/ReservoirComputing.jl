@@ -12,7 +12,7 @@ ReservoirComputing.jl provides an efficient, modular and easy to use implementat
     * Lukoševičius, Mantas, and Herbert Jaeger: Reservoir computing approaches to recurrent neural network training.
 
 !!! info "Performance tip"
-    For faster computations on the CPU it is suggested to add `using MKL` to the script. For sake of clarity this library will not be indicated under every example in the documentation. 
+    For faster computations on the CPU it is suggested to add `using MKL` to the script. For clarity's sake this library will not be indicated under every example in the documentation. 
 
 ## Installation
 ReservoirComputing.jl is registered in the General Julia Registry, so the installation of the package follows the usual procedure:
